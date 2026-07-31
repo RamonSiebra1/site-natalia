@@ -52,7 +52,7 @@ CSS STRUCTURE:
   --accent-color: #333;
   --black-color: #000;
   --dark-color: #4C5354;
-  --primary-color: #1CBCCF;
+  --primary-color: #10a6c8;
   --primary-color-200: #E8F0F1;
   --primary-color-400: #c4e9ed;
   --gray-color: #777F81;
@@ -563,6 +563,7 @@ form.search-form svg.search {
 
 /* 4.1 Header
 /*----------------------------------------------*/
+
 #primary-header.navbar {
   z-index: 9;
   padding-top: 0;
@@ -660,6 +661,8 @@ div#navbar-primary {
 
 /* 4.2 Intro (Billboard) Section
 /*----------------------------------------------*/
+
+
 section#intro {
   margin-top: -30px;
 }
@@ -817,6 +820,22 @@ section#intro {
 #our-team .swiper-pagination-custom,
 #our-team .swiper-pagination-fraction {
   bottom: -6px;
+}
+
+#our-team .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#our-team .member-info {
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    #our-team .member-info {
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1088,4 +1107,22 @@ button.filter-button.gallery-btn:hover {
   --------------------------------------------------------------*/
 span.price-tick {
   color: var(--primary-color);
+}
+
+/*--------------------------------------------------------------
+ 5 extras
+--------------------------------------------------------------*/
+.whatsapp-float{
+  position:fixed;
+  width:60px;
+  height:60px;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:#fff;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:999;
 }
