@@ -663,8 +663,10 @@ div#navbar-primary {
 /*----------------------------------------------*/
 
 
-section#intro {
-  margin-top: -30px;
+@media (min-width: 992px) {
+    section#intro {
+        margin-top: -30px;
+    }
 }
 
 #intro .banner-content {
@@ -1126,3 +1128,4 @@ span.price-tick {
   justify-content:center;
   z-index:999;
 }
+
